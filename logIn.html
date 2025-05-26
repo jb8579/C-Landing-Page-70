@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="Login Powerball Account, Powerball Sign In, Play Powerball Online, Secure Login, Powerball Australia, Powerball Account Access, PlayPowerballToday, Online Lottery Login, Australian Powerball">
+		<meta name="description" content="Login to your PlayPowerballToday.com account for secure access to Powerball tickets, results, and your player dashboard. Enjoy Australia’s premier online lottery experience—sign in and play to win!">
+		<meta name="designer" content="PlayPowerballToday.com Team">
+		<title>Login | Play Powerball Today Australia</title>
+		<link rel="icon" href="img/favicon.png" />
+		<link rel="stylesheet" href="pwbllstle1923.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+	</head>
+
+
+	<body>
+		<section class="topheader-area">
+			<div class="topheader-part">
+				<p>
+					<img src="img/logo18+.png" alt="18 Plus Only - Responsible Gambling Australia" />
+					For Australians aged 18 and over. Please enjoy Powerball responsibly—set your limits and play for fun. If you ever need help, visit<a href="https://www.gamblinghelponline.org.au/" target="_blank" rel="noopener"> Gambling Help Online</a>.
+				</p>
+			</div>
+		</section>
+
+		<header class="header-area">
+			<div class="container">
+				<div class="header-part">
+					<div class="header-logo">
+						<a href="index.html">
+							<img src="img/logo.png" alt="Play Powerball Today - Australia Powerball Logo" />
+						</a>
+					</div>
+					<div class="header-btn">
+						<ul>
+							<li><a href="logIn.html" aria-label="Log In to your Powerball account">Log In</a></li>
+							<li><a href="register.html" aria-label="Register for a new Powerball account">Register</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="form-area">
+			<div class="container">
+				<div class="formbox">
+					<div class="formheading">
+						<h2>Log In</h2>
+					</div>
+					<div class="formpart">
+						<form action="#" method="POST" id="loginForm">
+							<div class="fromitems">
+								<p>Email</p>
+								<div class="fromitem">
+									<input type="email" name="email" placeholder="Enter your email" id="loginEmail">
+								</div>
+								<p>Password</p>
+								<div class="password-container">
+									<input type="password" id="loginPasswordInput" placeholder="Enter Password">
+									<button type="button" class="toggle-password" onclick="togglePassword('loginPasswordInput', 'loginEyeIcon')">
+										<img id="loginEyeIcon" src="img/eyeclose.svg" alt="Show Password">
+									</button>
+								</div>
+							</div>
+							<div class="formfrps">
+								<p><a href="forgetpassword.html">Forgot Password?</a></p>
+							</div>
+							<div class="fromitem2">
+								<input type="submit" value="Log In" id="loginButton" disabled>
+							</div>
+							<div class="fromitem3 formsn">
+								<h6>Don’t have an account? <a href="register.html">Sign Up here</a></h6>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+			input[type="submit"]:disabled {
+				background: #0516ad;
+				color: #c9c7c7;
+				cursor: not-allowed;
+				opacity: 0.9;
+			}
+		</style>
+
+		<script>
+			// Password toggle
+			function togglePassword(inputId, iconId) {
+				const passwordInput = document.getElementById(inputId);
+				const eyeIcon = document.getElementById(iconId);
+				if (passwordInput.type === "password") {
+					passwordInput.type = "text";
+					eyeIcon.src = "img/eye.svg";
+				} else {
+					passwordInput.type = "password";
+					eyeIcon.src = "img/eyeclose.svg";
+				}
+			}
+
+			// Enable/disable button
+			function validateLogin() {
+				const email = document.getElementById('loginEmail').value.trim();
+				const password = document.getElementById('loginPasswordInput').value.trim();
+				const loginButton = document.getElementById('loginButton');
+				if (email && password) {
+					loginButton.disabled = false;
+				} else {
+					loginButton.disabled = true;
+				}
+			}
+
+			// Listen for input changes
+			document.getElementById('loginForm').addEventListener('input', validateLogin);
+
+			// Optional: Redirect on submit
+			document.getElementById('loginForm').addEventListener('submit', function(event) {
+				event.preventDefault();
+				window.location.href = "index.html"; // Or wherever you want to redirect
+			});
+		</script>
+
+
+
+		<footer class="footer-area">
+			<div class="footer-part">
+				<div class="footer-logos">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/pwbll1921.png" alt="18 Plus – Only for Adults" />
+							</a>
+						</li>
+						<li>
+							<a href="https://www.gambleaware.org/" target="_blank" rel="noopener">
+								<img src="img/pwbll1922.png" alt="GambleAware – Responsible Gambling Support" />
+							</a>
+						</li>
+						<li>
+							<a href="https://gamblershelp.com.au/" target="_blank" rel="noopener">
+								<img src="img/pwbll1923.png" alt="Gamblers Help Australia – Problem Gambling Advice" />
+							</a>
+						</li>
+						<li>
+							<a href="https://ecogra.org/" target="_blank" rel="noopener">
+								<img src="img/pwbll1924.png" alt="eCOGRA – Certified Fair Gaming" />
+							</a>
+						</li>
+						<li>
+							<a href="https://www.gambleaware.org/" target="_blank" rel="noopener">
+								<img src="img/pwbll1925.png" alt="GambleAware Australia Logo" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-text">
+					<p>
+						<strong>Play smart, play responsibly.</strong> Powerball is meant to be exciting and fun. Only Australians aged 18+ may participate. For support, contact Gambling Help at <a href="tel:1800858858">1800 858 858</a> or visit <a href="https://www.gambleaware.nsw.gov.au/" target="_blank" rel="noopener">GambleAware NSW</a>.<br>
+						Remember: never spend more than you can afford to lose.
+					</p>
+				</div>
+				<div class="footer-nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><span>|</span></li>
+						<li><a href="privacypolicy.html">Privacy Policy</a></li>
+						<li><span>|</span></li>
+						<li><a href="cookiepolicy.html">Cookies Policy</a></li>
+						<li><span>|</span></li>
+						<li><a href="terms&conditions.html">Terms and Conditions</a></li>
+						<li><span>|</span></li>
+						<li><a href="mailto:support@Playpowerballtoday.com">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-copyright">
+					<p>Copyright ©2025 PlayPowerballToday.com. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+		
+		
+	</body>
+</html>
