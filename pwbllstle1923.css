@@ -56,7 +56,7 @@ ul {
 }
 
 .header-area {
-    background-color: #00155b;
+    background-color: #ffffff;
     padding: 15px 0;
 }
 
@@ -85,7 +85,7 @@ ul {
 }
 
 .header-btn ul li:nth-child(1) a {
-    color: #fff;
+    color: #000000;
     font-size: 16px;
     font-weight: bold;
     width: 106px;
@@ -95,23 +95,25 @@ ul {
     line-height: 50px;
     border-radius: 5px;
     transition: 0.3s all ease;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     text-transform: uppercase;
+    background: gainsboro;
 }
 
 .header-btn ul li:nth-child(1) a:hover {
-    background-color: #164bc5;
-    border: 1px solid #164bc5;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #fff;
 }
 
 .header-btn ul li:nth-child(2) a {
-    color: #000;
+    color: #ffffff;
     font-size: 16px;
     font-weight: bold;
     width: 119px;
     height: 50px;
     display: block;
-    background-color: #fff;
+    background: linear-gradient(125.13deg, #2ba0ed 10.31%, #185b87 86.64%);
     text-align: center;
     line-height: 50px;
     border-radius: 5px;
@@ -121,9 +123,9 @@ ul {
 }
 
 .header-btn ul li:nth-child(2) a:hover {
-    background-color: #fce00b;
-    color: #000;
-    border: 1px solid #fce00b;
+    background: linear-gradient(125.13deg, #0a64a0 10.31%, #239ff1 86.64%);
+    color: #ffffff;
+    border: 1px solid #fff;
 }
 
 .container {
@@ -875,7 +877,7 @@ ul {
 
 .previouspbres-items {
     border-radius: 15px;
-    background: linear-gradient(101.57deg, #00124d -3.99%, #4d66b7 104.89%);
+    background: linear-gradient(346deg, #2ba0ed 10.31%, #185b87 86.64%);
     overflow: hidden;
 }
 
