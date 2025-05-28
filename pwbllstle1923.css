@@ -136,7 +136,7 @@ ul {
 }
 
 .maininner-area {
-    background-image: url("img/mainbg.png");
+    background-image: url("img/pwbll192bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -254,6 +254,7 @@ ul {
 .newtext-area {
     background-color: #fff;
     padding: 80px 60px;
+    border-top: 1px solid #8080802b;
 }
 
 .newtext-heading {
@@ -346,7 +347,7 @@ ul {
 }
 
 .form-area {
-    background-image: url(img/bg6.png);
+    background-image: url(img/pwbll192fbg.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -810,7 +811,7 @@ ul {
 }
 
 .itembox.active {
-    background-image: url("img/faqbg.png");
+    background-image: url("img/pwbll192ffaqbg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
